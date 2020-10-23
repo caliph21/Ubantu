@@ -1,6 +1,7 @@
 # 一.恢复Grub引导:
 U_disk start:  
 Ctrl+Shift+t,open Terminal.  
+'<
 ubuntu@ubuntu:~$ sudo su  
 root@ubuntu:/home/ubuntu# fdisk -l  
 root@ubuntu:/home/ubuntu# mount /dev/sda /mnt  
@@ -12,8 +13,8 @@ grub-install: error: failed to get canonical path of `/cow'.
 ubuntu@ubuntu:~$ df  
 ubuntu@ubuntu:~$ sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt-get update  
 ubuntu@ubuntu:~$ sudo apt-get install -y boot-repair  
-ubuntu@ubuntu:~$ boot-repair  
->>>
+ubuntu@ubuntu:~$ boot-repair  >'
+>>
 select:Recommended repair...waitting...Create a Bootinfo summary(r).This may  require several mintutes....waitting.....restart...
 
 > 在迁移后的Ubuntu下重装Grub  
@@ -265,13 +266,14 @@ you-get --playlist -o D:\docker教程 --format=flv https://www.bilibili.com/vide
 # 二、pip正确安装:
 重新安装 pip 但不是通过 apt-get 而是通过 python -m  
 因为我用的是 python3 ，所以我执行的命令为：  
+'<
 maya@California:~$ sudo python3 -m pip install --upgrade --force-reinstall pip  
 Collecting pip  
   Downloading pip-20.2.4-py2.py3-none-any.whl (1.5 MB)  
      |████████████████████████████████| 1.5 MB 8.9 kB/s   
 Installing collected packages: pip  
 maya@California:~$ pip -V  
-pip 20.2.4 from /usr/local/lib/python3.8/dist-packages/pip (python 3.8)  
+pip 20.2.4 from /usr/local/lib/python3.8/dist-packages/pip (python 3.8)  >'
 
 成功安装 python3 对应的 pip ，并且修改 pip 指定为 python3 的包管理工具。此时执行 pip -V  
 
