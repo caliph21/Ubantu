@@ -347,16 +347,30 @@ maya@California:~/Downloads$
 
 #九、安装pycharm2020.2.2及激活，见https://blog.csdn.net/caliph21/article/details/109096929
 #九、git/github
-maya@California:~$ mkdir myGithub  
-maya@California:~$ cd myGithub  
-maya@California:~/myGithub$ git init  
-Command 'git' not found, but can be installed with:  
-sudo apt install git  
-maya@California:~/myGithub$ sudo apt install git  
-maya@California:~/myGithub$ git init  
+1.mkdir myGithub  
+cd myGithub  
+2.sudo apt install git  
+3.git init  
 已初始化空的 Git 仓库于 /home/maya/myGithub/.git/  
-save file:
-maya@California:~/myGithub$ cp ~/Desktop/Ubuntu_command.md ~/myGithub  
+5.把github上面的仓库克隆到本地:  
+git clone https://github.com/caliph21/Ubantu.git  
+正克隆到 'Ubantu'...  
+6.把需要上传的文件或文件夹拷贝到/myGithub文件夹内
+  如拷贝到Ubantu文件夹不会拷贝任何东西。
+  
+7.接下来依次输入以下代码即可完成其他剩余操作：
+$ git add  . （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）
+$ git init
+$ git config --global user.name "caliph21"
+$ git config --global user.email "caliph21@163.com"
+$ git commit -m "first commit"（注：“提交信息”里面换成你需要，如“first commit”）
+$ git push -u origin master （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
+
+
+
+
+
+
 
 
 
