@@ -248,6 +248,7 @@ streams:             # Available quality and codecs
 
 # 切换路径，然后再下载视频：  
 maya@California:~$ cd ~/Downloads  
+
 maya@California:~/Downloads$ you-get --format=dash-flv https://www.bilibili.com/video/BV1Pf4y1z7Rt  
 
 # 指定文件夹：  #   
@@ -267,7 +268,7 @@ you-get --playlist -o D:\docker教程 --format=flv https://www.bilibili.com/vide
 重新安装 pip 但不是通过 apt-get 而是通过 python -m  
 因为我用的是 python3 ，所以我执行的命令为：  
 '<
-maya@California:~$ sudo python3 -m pip install --upgrade --force-reinstall pip  
+sudo python3 -m pip install --upgrade --force-reinstall pip  
 Collecting pip  
   Downloading pip-20.2.4-py2.py3-none-any.whl (1.5 MB)  
      |████████████████████████████████| 1.5 MB 8.9 kB/s   
@@ -299,7 +300,8 @@ sudo apt-get install yasm
 maya@California:~/Downloads/ffmpeg-4.3.1/build$ ../configure  
 nasm/yasm not found or too old. Use --disable-x86asm for a crippled build.  
 
-***maya@California:~/Downloads/ffmpeg-4.3.1/build$ ../configure --disable-x86asm  
+***maya@California:/Downloads/ffmpeg-4.3.1/build$ ../configure --disable-x86asm  
+
 7、编译(这个过程耗时比较久，耐心等待一下)  
 make  
 8、安装  
@@ -334,14 +336,13 @@ Downloading 【叠纸新作】次世代3D恋爱动作手游《恋与深空》实
 
 一、一般选择选者.tar.gz包  
 二、 下载后解压：  
-tar -zxvf flash_player_npapi_linux.x86_64.tar.gz  
-maya@California:~/Downloads$ tar -zxvf flash_player_npapi_linux.x86_64.tar.gz  libflashplayer.so  
+tar -zxvf flash_player_npapi_linux.x86_64.tar.gz  libflashplayer.so  
 三、拷贝到火狐插件目录：  
 sudo cp libflashplayer.so /usr/lib/firefox-addons/plugins/  
 如果报目录不存在错误，说明火狐安装目录不是这个，看具体情况。  
-maya@California:~/Downloads$ sudo cp libflashplayer.so /usr/lib/firefox-addons/plugins/  
-maya@California:~/Downloads$ sudo cp -r usr/* /usr  
-maya@California:~/Downloads$   
+$ sudo cp libflashplayer.so /usr/lib/firefox-addons/plugins/  
+$ sudo cp -r usr/* /usr  
+
   运行了 #-->系统 软件安装与更新 失败 解决：  
 火狐浏览器莫名其妙的可以播放视频了，即可。  
 
