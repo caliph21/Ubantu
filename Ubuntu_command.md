@@ -346,7 +346,7 @@ maya@California:~/Downloads$
 火狐浏览器莫名其妙的可以播放视频了，即可。  
 
 #九、安装pycharm2020.2.2及激活，见https://blog.csdn.net/caliph21/article/details/109096929
-#九、git/github
+#10、git/github
 1.mkdir myGithub  
 cd myGithub  
 2.sudo apt install git  
@@ -364,13 +364,18 @@ $ git init
 $ git config --global user.name "caliph21"
 $ git config --global user.email "caliph21@163.com"
 $ git commit -m "first commit"（注：“提交信息”里面换成你需要，如“first commit”）
-$ git push -u origin master （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
+$ git push -u origin master （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）  
+
+USB连接手机：
+
+maya@California:/run/user/1000/gvfs/mtp:host=HUAWEI_DUK-AL20_FFK0217922006370/内
+部存储/91movie$ 
+cp /home/maya/PycharmProjicts/Event/万族之劫.txt ./91movie/
 
 
-
-
-
-
+http://www.31xiaoshuo.org/32/32529/
+http://www.31xiaoshuo.org/34/34171/
+http://www.31xiaoshuo.org/0/28/
 
 
 
